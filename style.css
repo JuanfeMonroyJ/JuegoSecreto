@@ -17,7 +17,7 @@ body {
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
     content: "";
     display: block;
     position: absolute;
@@ -27,7 +27,7 @@ body::before {
 }
 
 .container {
-    width: 1200px;
+    width: 1300px;
     height: 600px;
     display: flex;
     align-items: center;
@@ -39,7 +39,6 @@ body::before {
     background-size: 100% 100%;
     position: relative;
 }
-
 
 .container__contenido {
     display: flex;
@@ -58,7 +57,7 @@ body::before {
     background: #1875E8;
     padding: 16px 24px;
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     border: none;
     margin-top: 2rem;
@@ -84,7 +83,7 @@ body::before {
     border: none;
     color: #1875E8;
     padding: 2rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -96,7 +95,7 @@ body::before {
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+    font-size: 4.5rem;
     padding-bottom: 3rem;
 }
 
@@ -106,6 +105,16 @@ button {
 }
 
 .texto__parrafo {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
+}
+
+@media (max-width: 1082px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    .container__imagen-persona {
+        display: none !important;
+    };
+
 }
