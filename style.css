@@ -27,7 +27,7 @@ body::before {
 }
 
 .container {
-    width: 1300px;
+    margin: 7px;
     height: 600px;
     display: flex;
     align-items: center;
@@ -38,6 +38,7 @@ body::before {
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
+    padding: 0;
 }
 
 .container__contenido {
@@ -109,12 +110,35 @@ button {
     font-weight: 400;
 }
 
-@media (max-width: 1082px) {
+@media (max-width: 1200px) {
+    .container {
+        margin: 5px;
+        padding: 0%;
+    }
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .container__imagen-persona {
         display: none !important;
-    };
-
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .container__informaciones {
+        padding: 2rem;
+    }
+    .container__boton {
+        font-size: 1.2rem;
+    }
+    .container__input {
+        height: 60px;
+        font-size: 1.2rem;
+    }
 }
